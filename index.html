@@ -1,0 +1,148 @@
+
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гадалка 🔮 - Узнай своё будущее</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #4c0080, #1a1a2e);
+            color: #e6e6fa;
+            text-align: center;
+        }
+        header {
+            padding: 30px 20px;
+            background-color: rgba(106, 13, 173, 0.9);
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
+        }
+        header h1 {
+            font-size: 3em;
+            animation: glow 2s infinite alternate;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        section h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        section p {
+            color: #cfcfe1;
+            line-height: 1.6em;
+        }
+        a {
+            color: #ff79c6;
+            text-decoration: none;
+        }
+        button {
+            margin-top: 15px;
+            background-color: #ff79c6;
+            color: #282a36;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff92e6;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #1a1a2e;
+            color: #cfcfe1;
+        }
+
+        /* Анимации */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff79c6, 0 0 20px #ff92e6, 0 0 30px #ff92e6;
+            }
+            to {
+                text-shadow: 0 0 20px #ff79c6, 0 0 30px #ff92e6, 0 0 40px #ff92e6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Гадалка 🔮</h1>
+        <p>Узнай своё будущее прямо сейчас!</p>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <p>✨ Предсказания на картах Таро</p>
+            <p>🌙 Астрологические консультации</p>
+            <p>🔮 Расклад на отношения и карьеру</p>
+            <p>💎 Снятие негатива и защита</p>
+            <button onclick="scrollToContact()">Заказать консультацию</button>
+        </section>
+        <section class="about">
+            <h2>О нас</h2>
+            <p>Мы имеем более 10 лет опыта в гадании и эзотерике. Все наши услуги подтверждены сертификатами, и мы гарантируем индивидуальный подход к каждому клиенту.</p>
+            <p><strong>Сертификаты:</strong> Международная школа Таро, Академия астрологии.</p>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <p>📞 Телефон: <a href="tel:+998909185109">+998 (90) 918-51-09</a></p>
+            <p>📍 Работаем онлайн и лично (по записи).</p>
+            <a href="https://t.me/GadalkaErin" target="_blank">
+                <button>Связаться через Telegram</button>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Гадалка 🔮. Все права защищены. | Условия конфиденциальности</p>
+    </footer>
+    <script>
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
